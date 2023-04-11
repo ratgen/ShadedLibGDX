@@ -16,9 +16,8 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
         cache: maven
-    - name: Build library
-      env:
-        SECRET_USER_NAME: ${{ github.actor }}
-        SECRET_USER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: mvn deploy    
+   - name: Publish package
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
