@@ -127,7 +127,8 @@
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
-                                        exports com.badlogic.gdx.utils;
+                                        exports com.badlogic.gdx.utils.*;
+                                        exports com.badlogic.gdx.assets.*;
                                         }
                                     </moduleInfoSource>
                                 </module>
