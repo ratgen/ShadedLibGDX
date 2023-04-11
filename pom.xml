@@ -78,14 +78,6 @@
                             <pattern>com.badlogic.gdx.utils</pattern>
                             <shadedPattern>com.badlogic.gdx.utils</shadedPattern>
                         </relocation>
-                        <relocation>
-                            <pattern>com.badlogic.gdx.assets</pattern>
-                            <shadedPattern>com.badlogic.gdx.assets</shadedPattern>
-                        </relocation>
-                        <relocation>
-                            <pattern>com.badlogic.gdx.maps</pattern>
-                            <shadedPattern>com.badlogic.gdx.maps</shadedPattern>
-                        </relocation>
                     </relocations>
                 </configuration>
                 <executions>
@@ -136,7 +128,6 @@
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
                                         exports com.badlogic.gdx.utils;
-                                        exports com.badlogic.gdx.maps;
                                         }
                                     </moduleInfoSource>
                                 </module>
