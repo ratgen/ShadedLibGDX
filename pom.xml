@@ -22,18 +22,10 @@
         <repository>
             <id>github</id>
             <name>GitHub sweat-tek Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/sweat-tek/ShadedLibGDX</url>
+            <url>https://maven.pkg.github.com/ratgen/ShadedLibGDX</url>
         </repository>
     </distributionManagement>
-
-
-    <repositories>
-        <repository>
-            <id>gdx-nightlies</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </repository>
-    </repositories>
-
+  
     <dependencies>
         <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
@@ -135,6 +127,7 @@
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
+                                        exports com.badlogic.gdx.utils;
                                         }
                                     </moduleInfoSource>
                                 </module>

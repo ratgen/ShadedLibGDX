@@ -12,8 +12,8 @@
       <repositories>
         <repository>
           <id>github</id>
-          <name>GitHub sweat-tek Apache Maven Packages</name>
-          <url>https://maven.pkg.github.com/sweat-tek/ShadedLibGDX</url>
+          <name>GitHub ratgen Apache Maven Packages</name>
+          <url>https://maven.pkg.github.com/ratgen/ShadedLibGDX</url>
         </repository>
       </repositories>
     </profile>
