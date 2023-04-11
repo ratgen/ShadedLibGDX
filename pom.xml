@@ -78,6 +78,14 @@
                             <pattern>com.badlogic.gdx.utils</pattern>
                             <shadedPattern>com.badlogic.gdx.utils</shadedPattern>
                         </relocation>
+                        <relocation>
+                            <pattern>com.badlogic.gdx.assets</pattern>
+                            <shadedPattern>com.badlogic.gdx.assets</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>com.badlogic.gdx.maps</pattern>
+                            <shadedPattern>com.badlogic.gdx.maps</shadedPattern>
+                        </relocation>
                     </relocations>
                 </configuration>
                 <executions>
