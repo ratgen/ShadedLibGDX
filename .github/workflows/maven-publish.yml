@@ -16,6 +16,7 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
         cache: maven
+    - run: cat /home/runner/.m2/settings.xml
     - name: Publish package
       run: mvn --batch-mode deploy
       env:
