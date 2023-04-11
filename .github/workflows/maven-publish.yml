@@ -13,10 +13,12 @@ jobs:
     - name: Set up JDK 
       uses: actions/setup-java@v3
       with:
+        distribution: 'temurin'
         java-version: 13
+        cache: maven
     - name: Build library
       env:
-        SECRET_USER_NAME: ${{ secrets.SECRET_USER_NAME }}
-        SECRET_USER_TOKEN: ${{ secrets.SECRET_USER_TOKEN }}
+        SECRET_USER_NAME: ${{ github.actor }}
+        SECRET_USER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: mvn deploy    
       
