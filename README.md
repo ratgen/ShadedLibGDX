@@ -1,6 +1,6 @@
 # ShadedLibGDX
 
-To use this plugin, put this in your pom.xml file for your whole project, inside the <profiles> section.
+To use this plugin, put this in your pom.xml file for your whole project, inside the `<profiles>` section.
 
 ```
 <profile>
