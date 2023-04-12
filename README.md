@@ -17,4 +17,4 @@ To use this plugin, put this in your pom.xml file for your whole project, inside
 </profile>
 ```
 
-Also changet the versions of shadedlibgdx to the latest version of the dependency.
+Also change the versions of shadedlibgdx to the latest version of the dependency.
