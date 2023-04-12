@@ -6,7 +6,7 @@
 
     <groupId>dk.sdu.mmmi.cbse</groupId>
     <artifactId>shadedlibgdx</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
 
@@ -128,6 +128,7 @@
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
                                         exports com.badlogic.gdx.utils;
+                                        exports com.badlogic.gdx.assets;
                                         }
                                     </moduleInfoSource>
                                 </module>
