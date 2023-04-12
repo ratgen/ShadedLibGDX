@@ -121,14 +121,15 @@
                                     </artifact>
                                     <moduleInfoSource>
                                         module com.badlogic.gdx {
-                                        requires java.desktop;
-                                        requires jdk.unsupported;
-                                        exports com.badlogic.gdx;
-                                        exports com.badlogic.gdx.graphics;
-                                        exports com.badlogic.gdx.backends.lwjgl3;
-                                        exports com.badlogic.gdx.graphics.glutils;
-                                        exports com.badlogic.gdx.utils;
-                                        exports com.badlogic.gdx.assets;
+                                                 requires java.desktop;
+                                                 requires jdk.unsupported;
+                                                 exports com.badlogic.gdx;
+                                                 exports com.badlogic.gdx.graphics;
+                                                 exports com.badlogic.gdx.backends.lwjgl3;
+                                                 exports com.badlogic.gdx.graphics.glutils;
+                                                 exports com.badlogic.gdx.utils;
+                                                 exports com.badlogic.gdx.assets;
+                                                 exports com.badlogic.gdx.maps;
                                         }
                                     </moduleInfoSource>
                                 </module>
