@@ -6,7 +6,7 @@
 
     <groupId>dk.sdu.mmmi.cbse</groupId>
     <artifactId>shadedlibgdx</artifactId>
-    <version>1.0.23</version>
+    <version>1.0.24</version>
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
 
@@ -116,7 +116,7 @@
                                     <artifact>
                                         <groupId>dk.sdu.mmmi.cbse</groupId>
                                         <artifactId>shadedlibgdx</artifactId>
-                                        <version>1.0.23</version>
+                                        <version>1.0.24</version>
                                     </artifact>
                                     <moduleInfoSource>
                                         module com.badlogic.gdx {
