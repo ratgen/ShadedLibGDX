@@ -128,6 +128,8 @@
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
                                         exports com.badlogic.gdx.utils;
+                                        exports com.badlogic.scenes;
+                                        exports com.badlogic.scenes.scene2d;
                                         }
                                     </moduleInfoSource>
                                 </module>
