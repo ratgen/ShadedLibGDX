@@ -135,6 +135,9 @@
                                                  exports com.badlogic.gdx.maps;
                                                  exports com.badlogic.gdx.scenes;
                                                  exports com.badlogic.gdx.scenes.scene2d;
+                                                 exports com.badlogic.gdx.scenes.ui;
+                                                 exports com.badlogic.gdx.scenes.utils;
+                                                
                                         }
                                     </moduleInfoSource>
                                 </module>

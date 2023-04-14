@@ -13,9 +13,15 @@ jobs:
     - name: Set up JDK 
       uses: actions/setup-java@v3
       with:
+        cache: maven
         distribution: 'temurin'
         java-version: '17'
-        cache: maven
+    - name: Increment version
+      id: increment-version
+      uses: RichardInnocent/semantic-versioning-maven@v0.0.36
+      with:
+        access-token: ${{ secrets.GITHUB_TOKEN }}
+
     - run: cat /home/runner/.m2/settings.xml
     - name: Publish package
       run: mvn --batch-mode deploy
