@@ -134,8 +134,6 @@
                                                  exports com.badlogic.gdx.assets.loaders;
                                                  exports com.badlogic.gdx.maps;
                                                  exports com.badlogic.gdx.scenes.scene2d;
-                                                 exports com.badlogic.gdx.scenes.ui;
-                                                
                                         }
                                     </moduleInfoSource>
                                 </module>

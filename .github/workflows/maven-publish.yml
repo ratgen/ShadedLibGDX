@@ -17,13 +17,15 @@ jobs:
         access-token: ${{ secrets.GITHUB_TOKEN }}
     - name: increment references
       if: steps.increment-version.outputs.previous-version != steps.increment-version.outputs.new-version
-      run: sed -e "s/${{ steps.increment-version.outputs.previous-version }}/${{ steps.increment-version.outputs.new-version }}/"
+      run: sed -e "s/${{ steps.increment-version.outputs.previous-version }}/${{ steps.increment-version.outputs.new-version }}/" > pom.xml
 
   build:
     runs-on: ubuntu-latest
     needs: increment_version
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: 'master'
     - name: Set up JDK 
       uses: actions/setup-java@v3
       with:
