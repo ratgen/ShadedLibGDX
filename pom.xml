@@ -6,7 +6,7 @@
 
     <groupId>dk.sdu.mmmi.cbse</groupId>
     <artifactId>shadedlibgdx</artifactId>
-    <version>1.0.16</version>
+    <version>1.0.17</version>
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
 
