@@ -1,7 +1,7 @@
 module com.badlogic.gdx {
   requires java.desktop;
   requires jdk.unsupported;
-  requires gdx.jnigen.loader;
+  exports com.badlogic.gdx;
   exports com.badlogic.gdx.graphics;
   exports com.badlogic.gdx.graphics.g2d;
   exports com.badlogic.gdx.backends.lwjgl3;
