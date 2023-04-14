@@ -6,7 +6,7 @@
 
     <groupId>dk.sdu.mmmi.cbse</groupId>
     <artifactId>shadedlibgdx</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
 
@@ -117,19 +117,23 @@
                                     <artifact>
                                         <groupId>dk.sdu.mmmi.cbse</groupId>
                                         <artifactId>shadedlibgdx</artifactId>
-                                        <version>1.0.1-SNAPSHOT</version>
+                                        <version>1.0.5-SNAPSHOT</version>
                                     </artifact>
                                     <moduleInfoSource>
                                         module com.badlogic.gdx {
-                                        requires java.desktop;
-                                        requires jdk.unsupported;
-                                        exports com.badlogic.gdx;
-                                        exports com.badlogic.gdx.graphics;
-                                        exports com.badlogic.gdx.backends.lwjgl3;
-                                        exports com.badlogic.gdx.graphics.glutils;
-                                        exports com.badlogic.gdx.utils;
-                                        exports com.badlogic.scenes;
-                                        exports com.badlogic.scenes.scene2d;
+                                                 requires java.desktop;
+                                                 requires jdk.unsupported;
+                                                 exports com.badlogic.gdx;
+                                                 exports com.badlogic.gdx.graphics;
+                                                 exports com.badlogic.gdx.backends.lwjgl3;
+                                                 exports com.badlogic.gdx.graphics.glutils;
+                                                 exports com.badlogic.gdx.utils;
+                                                 exports com.badlogic.gdx.utils.viewport;
+                                                 exports com.badlogic.gdx.assets;
+                                                 exports com.badlogic.gdx.assets.loaders;
+                                                 exports com.badlogic.gdx.maps;
+                                                exports com.badlogic.scenes;
+                                                exports com.badlogic.scenes.scene2d;
                                         }
                                     </moduleInfoSource>
                                 </module>
