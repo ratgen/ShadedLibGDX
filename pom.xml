@@ -10,7 +10,6 @@
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <libGDX.version>1.11.0</libGDX.version>
