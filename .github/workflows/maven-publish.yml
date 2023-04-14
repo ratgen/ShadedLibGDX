@@ -19,7 +19,8 @@ jobs:
         access-token: ${{ secrets.GITHUB_TOKEN }}
     - name: increment references
       if: steps.increment-version.outputs.previous-version != steps.increment-version.outputs.new-version
-      run: sed -e "s/${{ steps.increment-version.outputs.previous-version }}/${{ steps.increment-version.outputs.new-version }}/" > pom.xml
+      run: sed -e "s/${{ steps.increment-version.outputs.previous-version }}/${{ steps.increment-version.outputs.new-version }}/" pom.xml > pom.xml
+    - run: pom.xml
     - uses: stefanzweifel/git-auto-commit-action@v4
 
   build:
