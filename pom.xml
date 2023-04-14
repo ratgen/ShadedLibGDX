@@ -25,6 +25,7 @@
         </repository>
     </distributionManagement>
   
+
     <dependencies>
         <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
