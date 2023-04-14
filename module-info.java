@@ -10,6 +10,7 @@ module com.badlogic.gdx {
   exports com.badlogic.gdx.utils.viewport;
   exports com.badlogic.gdx.assets;
   exports com.badlogic.gdx.assets.loaders;
+  exports com.badlogic.gdx.assets.loaders.resolvers;
   exports com.badlogic.gdx.maps;
   exports com.badlogic.gdx.maps.tiled;
   exports com.badlogic.gdx.maps.tiled.tiles;
