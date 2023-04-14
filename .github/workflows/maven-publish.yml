@@ -7,6 +7,8 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   increment_version:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -18,6 +20,7 @@ jobs:
     - name: increment references
       if: steps.increment-version.outputs.previous-version != steps.increment-version.outputs.new-version
       run: sed -e "s/${{ steps.increment-version.outputs.previous-version }}/${{ steps.increment-version.outputs.new-version }}/" > pom.xml
+    - uses: stefanzweifel/git-auto-commit-action@v4
 
   build:
     runs-on: ubuntu-latest
