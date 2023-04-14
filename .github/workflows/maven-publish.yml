@@ -6,8 +6,19 @@ name: Java CI with Maven
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
+  increment_version:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Increment version
+      id: increment-version
+      uses: RichardInnocent/semantic-versioning-maven@v0.0.36
+      with:
+        access-token: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     runs-on: ubuntu-latest
+    needs: increment_version
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 
@@ -16,11 +27,6 @@ jobs:
         cache: maven
         distribution: 'temurin'
         java-version: '17'
-    - name: Increment version
-      id: increment-version
-      uses: RichardInnocent/semantic-versioning-maven@v0.0.36
-      with:
-        access-token: ${{ secrets.GITHUB_TOKEN }}
 
     - run: cat /home/runner/.m2/settings.xml
     - name: Publish package
