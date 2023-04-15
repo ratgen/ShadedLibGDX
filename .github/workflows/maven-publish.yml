@@ -18,6 +18,8 @@ jobs:
     - name: Git Version
       id: version
       uses: codacy/git-version@2.8.0
+      with:
+        prefix: "v"
     - name: Increment project version
       run: mvn versions:set -DnewVersion=${{ steps.version.outputs.version}}
     - name: increment references
