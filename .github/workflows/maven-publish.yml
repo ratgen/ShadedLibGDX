@@ -15,17 +15,28 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
         fetch-depth: 0
+
     - name: Git Version
       id: version
       uses: codacy/git-version@2.8.0
       with:
         prefix: "v"
+
+    - run: echo "VERSION=$(sed -e "s/v//g" ${{ steps.version.outputs.version }})" >> $GITHUB_ENV
+
     - name: Increment project version
-      run: mvn versions:set -DnewVersion=${{ steps.version.outputs.version}}
+      run: mvn versions:set -DnewVersion=$VERSION
+
     - name: increment references
-      if: steps.version.outputs.previous-version != steps.version.outputs.version
-      run: bash update-version.sh ${{ steps.version.outputs.previous-version }} ${{ steps.version.outputs.version }}
-        #run: sed -e "s/${{ steps.increment-version.outputs.previous-version }}/${{ steps.increment-version.outputs.new-version }}/" pom.xml > pom.xml
+      if: steps.version.outputs.previous-version != $VERSION
+      run: bash update-version.sh ${{ steps.version.outputs.previous-version }} $VERSION
+
+    - name: Bump version and push tag
+      uses: laputansoft/github-tag-action@v4.6
+      with:
+        github_token: ${{ env.github-token }}
+        tag: $VERSION
+
     - run: cat pom.xml
     - uses: stefanzweifel/git-auto-commit-action@v4
 
