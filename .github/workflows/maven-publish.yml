@@ -27,11 +27,12 @@ jobs:
       if: steps.version.outputs.previous-version != ${{ steps.version.outputs.version }}
       run: bash update-version.sh ${{ steps.version.outputs.previous-version }} ${{ steps.version.outputs.version }} 
 
-    - name: Bump version and push tag
-      uses: laputansoft/github-tag-action@v4.6
+    - name: Push tag
+      uses: mathieudutour/github-tag-action@v6.1
       with:
-        github_token: ${{ env.github-token }}
-        tag: ${{ steps.version.outputs.version }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        default_bump: false
+        custom_tag: ${{ steps.version.outputs.version }}
 
     - run: cat pom.xml
     - uses: stefanzweifel/git-auto-commit-action@v4
