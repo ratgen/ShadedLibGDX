@@ -6,10 +6,9 @@
 
     <groupId>dk.sdu.mmmi.cbse</groupId>
     <artifactId>shadedlibgdx</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
     <name>shadedlibgdx</name>
-
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,18 +20,10 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub sweat-tek Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/sweat-tek/ShadedLibGDX</url>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/ratgen/ShadedLibGDX</url>
         </repository>
     </distributionManagement>
-
-
-    <repositories>
-        <repository>
-            <id>gdx-nightlies</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </repository>
-    </repositories>
 
     <dependencies>
         <dependency>
@@ -125,18 +116,9 @@
                                     <artifact>
                                         <groupId>dk.sdu.mmmi.cbse</groupId>
                                         <artifactId>shadedlibgdx</artifactId>
-                                        <version>1.0.1-SNAPSHOT</version>
+                                        <version>1.0.32</version>
                                     </artifact>
-                                    <moduleInfoSource>
-                                        module com.badlogic.gdx {
-                                        requires java.desktop;
-                                        requires jdk.unsupported;
-                                        exports com.badlogic.gdx;
-                                        exports com.badlogic.gdx.graphics;
-                                        exports com.badlogic.gdx.backends.lwjgl3;
-                                        exports com.badlogic.gdx.graphics.glutils;
-                                        }
-                                    </moduleInfoSource>
+                                    <moduleInfoFile>module-info.java</moduleInfoFile>
                                 </module>
                             </modules>
                         </configuration>
