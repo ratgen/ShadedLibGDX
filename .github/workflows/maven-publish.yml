@@ -11,10 +11,12 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
     - name: Git Version
       id: version
-      uses: codacy/git-version@2.4.0
+      uses: codacy/git-version@2.8.0
     - name: Increment project version
       run: mvn versions:set -DnewVersion=${{ steps.version.outputs.version}}
     - name: increment references
