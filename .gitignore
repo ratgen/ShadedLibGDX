@@ -24,3 +24,11 @@ hs_err_pid*
 
 /target/
 /.idea
+
+*.xml.versionsBackup
+
+nbactions.xml
+
+**/.classpath
+**/.settings
+**/.project
