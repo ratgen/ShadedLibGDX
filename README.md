@@ -1,6 +1,6 @@
 # ShadedLibGDX
 
-To add to your project, add this in your profile section:
+To add to your project, add this in your profile section in your `pom.xml` file in your root project:
 
 ```
 <profile>
