@@ -15,4 +15,5 @@ module com.badlogic.gdx {
   exports com.badlogic.gdx.maps.tiled;
   exports com.badlogic.gdx.maps.tiled.tiles;
   exports com.badlogic.gdx.scenes.scene2d;
+  exports com.badlogic.gdx.scenes.scene2d.ui;
 }
