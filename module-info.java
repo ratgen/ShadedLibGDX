@@ -20,5 +20,5 @@ module com.badlogic.gdx {
   exports com.badlogic.gdx.scenes.scene2d;
   exports com.badlogic.gdx.scenes.scene2d.actions;
   exports com.badlogic.gdx.scenes.scene2d.ui;
-  
+  exports com.badlogic.gdx.physics.box2d;
 }
